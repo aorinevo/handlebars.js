@@ -77,9 +77,14 @@ const testCases = [
     expectedOutputSpec: './spec/expected/version.txt'
   },
   {
-    binInputParameters: ['-i', '<div>Test String</div>'],
+    binInputParameters: [
+      '-a',
+      '-e',
+      'hbs',
+      './spec/artifacts/non.default.extension.hbs'
+    ],
     outputLocation: 'stdout',
-    expectedOutputSpec: './spec/expected/compiled.string.txt'
+    expectedOutputSpec: './spec/expected/non.default.extension.amd.js'
   }
 ];
 
