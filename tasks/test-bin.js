@@ -85,6 +85,15 @@ const testCases = [
     ],
     outputLocation: 'stdout',
     expectedOutputSpec: './spec/expected/non.default.extension.amd.js'
+  },
+  {
+    binInputParameters: [
+      '-p',
+      '-a',
+      './spec/artifacts/example.partial.template.handlebars'
+    ],
+    outputLocation: 'stdout',
+    expectedOutputSpec: './spec/expected/example.partial.template.js'
   }
 ];
 
